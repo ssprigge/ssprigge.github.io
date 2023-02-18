@@ -4,17 +4,24 @@
 
 d-byline {
   border-top-color: var(--global-divider-color) !important;
+  /* added below line to hide author affiliations and publishing date */
+  visibility: hidden;
 }
 
 d-byline h3 {
   color: var(--global-text-color) !important;
+  /* added below line to hide author affiliations and publishing date */
+  visibility: hidden;
+
 }
 
 d-byline a, d-article d-byline a {
   color: var(--global-text-color) !important;
   &:hover {
     color: var(--global-hover-color) !important;
+  /* added below line to hide author affiliations and publishing date */
   }
+  visibility: hidden;
 }
 
 d-article {
