@@ -42,6 +42,8 @@
 
         .section {
             margin: 3rem 0;
+            border: 1px solid var(--dim-color);
+            padding: 1.5rem;
         }
 
         h2 {
@@ -56,11 +58,21 @@
             font-size: 1.1rem;
         }
 
-        .quote {
-            border-left: 2px solid var(--text-color);
-            padding-left: 1rem;
-            margin: 2rem 0;
-            font-style: italic;
+        .achievements {
+            list-style: none;
+        }
+
+        .achievements li {
+            margin-bottom: 1.2rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .achievements li::before {
+            content: ">";
+            position: absolute;
+            left: 0;
+            color: var(--highlight-color);
         }
 
         .project {
@@ -130,8 +142,20 @@
     </header>
 
     <div class="section">
-        <h2>The Mission</h2>
-        <p>Dedicated to transforming government efficiency through innovative AI solutions and systematic process improvement. Currently developing AI-powered infrastructure inspection systems that could save millions in taxpayer dollars while improving public safety.</p>
+        <h2>High IQ</h2>
+        <ul class="achievements">
+            <li>Honors BS in Mathematics from University of Rochester, graduating Magna Cum Laude with Highest Distinction. Program described by Mathematics Department as "the most intensive degree offered at the University."</li>
+            <li>Selected for Syracuse University Mathematics Graduate Fellowship - awarded to a single student per incoming class</li>
+            <li>Elected to Phi Beta Kappa</li>
+            <li>Authored undergraduate thesis in Differential Topology, focusing on Jordan-Brouwer Separation Theorem</li>
+            <li>Recipient of Bausch & Lomb Science Scholarship</li>
+            <li>Currently provide advanced instruction in Mathematics, Statistics, Physics, and Computer Science through Syracuse University's Center for Disability Resources</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>80+ Hour Weeks</h2>
+        <p>Demonstrated capacity for sustained 80+ hour work weeks during five years of graduate study, balancing teaching responsibilities, advanced coursework, qualifying exam preparation, and mathematical research.</p>
     </div>
 
     <div class="section">
