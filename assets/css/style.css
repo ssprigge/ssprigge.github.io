@@ -32,6 +32,13 @@ header {
     to { opacity: 1; transform: translateY(0); }
 }
 
+.centered-img {
+    max-width: 80%; /* Scale image width to 80% of the container */
+    height: auto;   /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Make the image a block element */
+}
+
 .typing-effect {
     border-right: 2px solid var(--text-color);
     white-space: nowrap;
